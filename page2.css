@@ -1,0 +1,106 @@
+body {
+
+  background: linear-gradient(90deg, #ffb88c, #de6262, #0abfbc, #24c6dc, #ffb88c);
+  background-size: 1400% 300%;
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 16px;
+  font-family: "Open Sans",serif;
+  font-weight: lighter;
+    font-color: #ffc7e7;
+
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 50% 100%; }
+  100% {
+    background-position: 100% 0%; } }
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 50% 100%; }
+  100% {
+    background-position: 100% 0%; } }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 50% 100%; }
+  100% {
+    background-position: 100% 0%; } }
+
+
+
+.margin-base-vertical {
+	font-family: "Open Sans", serif;
+	font-weight: 400;
+	font-size: 40px;
+	font-color: #fff;
+}
+
+
+.header {
+
+    color: #fff;
+    padding: 50px;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 16px;
+    font-weight: lighter;
+    font: bold;
+}
+
+h1 {
+	font-family: "Open Sans", serif;
+	font-size: 40px;
+}
+
+.hi {
+	padding-bottom:25px;
+	padding-left:15px;
+}
+
+.grin {
+	text-align: center;
+
+
+}
+
+.blah {
+	padding-bottom:15px;
+}
+
+.smiler{
+	padding-top:15px;
+}
+
+.off-balance {
+	font-size:24px;
+	padding-top:15px;
+}
+.faq {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 50px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 50px;
+  margin-right: 230px;
+  margin-left: 230px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15); }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <script src="https://use.fontawesome.com/a22533559d.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="page2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<header class="header">
+    <div class="container">
+      <div class="row smile">
+        <div class="col-md-6 col-md-offset-3 blah">
+        <div class="grin">
+            <img src="star.png" align="middle" style="width:28px;height:28px;">
+            </grin>
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div class="container">
+  <div class="faq">
+  <form>
+    <div class="form-group row welcome">
+    <p class="hi"> Hey, welcome to our beta! Tell us a little bit more about you.</p>
+      <label for="inputEmail3" class="col-sm-10 col-form-label">What's your email?</label>
+      <div class="col-sm-10 blah">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+      </div>
+    </div>
+    <fieldset class="form-group row">
+      <label class="col-sm-10">I'm interested in talking to experts about questions related to</label>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            technology
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            healthcare
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+            law
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+            life experiences
+          </label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+            other
+          </label>
+
+      </div>
+    </fieldset>
+
+     <div class="form-group"> 
+    <label for="exampleInputquestion">What do you want to ask?</label>
+      <div class="col-sm-10 blah">
+    <input type="question" class="form-control" id="exampleInputquestion"  placeholder="Enter question"> 
+    <small id="emailHelp" class="form-text text-muted">We'll find an expert and match you with them.</small></div>
+  </div>
+
+    <div class="form-group row smiler">
+      <div class="offset-sm-2 col-sm-10">
+        <button type="SUBMIT" class="btn btn-primary">SUBMIT</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+
+
+        <script src="https://cdn.firebase.com/js/client/2.0.6/firebase.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+
+        <script>
+        var submissionsRef = new Firebase('https://form-example.firebaseio.com/submissions');
+
+        var $form = $('#form');
+        $form.submit(function(event) {
+            event.preventDefault();
+
+            // Firebase generates random id when pushed
+            var data = $form.serializeArray();
+            submissionsRef.push(data, function(err) {
+                if (err) {
+                    window.alert('Error when submitting data: ' + err.message);
+                }
+            });
+
+            window.alert('Submitted answers: \n' + JSON.stringify(data, null, 2));
+            $form[0].reset();
+        });
+        </script>
+
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA2hxyq4AW8-9LVtaCBez0eK17YLSVcaqo",
+    authDomain: "babar-59fbd.firebaseapp.com",
+    databaseURL: "https://babar-59fbd.firebaseio.com",
+    projectId: "babar-59fbd",
+    storageBucket: "babar-59fbd.appspot.com",
+    messagingSenderId: "588300507491"
+  };
+  firebase.initializeApp(config);
+
+</script>
+
+
+</html>

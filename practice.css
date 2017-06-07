@@ -1,0 +1,149 @@
+
+
+body {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 16px;
+	font-family: "Open Sans",serif;
+}
+
+h1 {
+	font-family: "Open Sans", serif;
+	font-weight: 400;
+	font-size: 40px;
+}
+
+.love {
+	font-size:30px;
+}
+
+h3 {
+	font-size:20px;
+	padding: 14px;
+	font-weight:lighter;
+}
+
+h2 {
+	padding: 14px;
+	px;
+}
+
+.margin-base-vertical {
+	margin: 30px 0;
+}
+
+
+.off-balance {
+	padding-top:15px;
+	padding-left:10px;
+	font-size: 24px;
+	font-weight:lighter;
+}
+.container {
+    max-width: 800 px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(to right, rgb(177, 130, 240), #569edb);
+    height: 500px;
+    color: #fff;
+}
+
+.smile {
+	height: 100%;
+}
+
+.picture {
+	padding-bottom:20px;
+}
+
+
+
+.btn-xlarge {
+    padding: 14px 28px;
+    font-size: 22px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+.text-center {
+	margin-top: 40px;
+}
+
+.blah {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	height: 100%;
+}
+
+.walk {
+	height: 100%;
+}
+
+.helloo {
+	height: 1100px;
+}
+
+.herd {
+ margin-top: 20px;
+ margin-bottom: 20px;
+ margin-right: 20px;
+}
+
+.whoa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.steam {
+	margin-top: 80pt;
+}
+
+.bottompadding {
+	padding-bottom: 10pt;
+}
+
+.user {
+
+    background: linear-gradient(to right, #4e3a7f, #220664);
+    color: #fff;
+    height: 600px;
+}
+
+.leave {
+	height: 100%;
+}
+
+.jungle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.MEOWMEOW {
+	height:400px;
+}
+
+.helps {
+	height: 100%;
+}
+
+.end {
+	font-size: 30px;
+}
+
+.redder {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+}
